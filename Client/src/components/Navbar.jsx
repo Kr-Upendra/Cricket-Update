@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -9,9 +10,9 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <a href="/" className="navbar__logo">
+      <Link to="/" className="navbar__logo">
         Cricket Update
-      </a>
+      </Link>
       <div
         onClick={handleNavbar}
         className="navbar__menu"
@@ -22,21 +23,21 @@ export default function Navbar() {
         <div className="navbar__menu--bars"></div>
       </div>
       <div className="navbar__links" data-shownav={showNavbar}>
-        <a href="/" className="navbar__links--link">
+        <Link to="/" className="navbar__links--link">
           Home
-        </a>
-        <a href="/news" className="navbar__links--link">
+        </Link>
+        <Link to="/news" className="navbar__links--link">
           News
-        </a>
-        <a href="/matches" className="navbar__links--link">
+        </Link>
+        <Link to="/series" className="navbar__links--link">
           Series
-        </a>
-        <a href="/fantasy" className="navbar__links--link">
+        </Link>
+        <Link to="/fantasy" className="navbar__links--link">
           Fantasy
-        </a>
-        <a href="/about" className="navbar__links--link">
+        </Link>
+        <Link to="/about" className="navbar__links--link">
           About
-        </a>
+        </Link>
       </div>
     </nav>
   );
