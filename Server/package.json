@@ -4,7 +4,7 @@
   "description": "A cricket scoring site where you can see cricket mathces score, news and much more",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
