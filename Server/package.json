@@ -1,0 +1,31 @@
+{
+  "name": "cricket-update",
+  "version": "1.0.0",
+  "description": "A cricket scoring site where you can see cricket mathces score, news and much more",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kr-Upendra/Cricket-Update.git"
+  },
+  "keywords": [
+    "Cricket",
+    "ReactJs",
+    "Nodejs",
+    "ExpressJS",
+    "ERN"
+  ],
+  "author": "Upendra Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kr-Upendra/Cricket-Update/issues"
+  },
+  "homepage": "https://github.com/Kr-Upendra/Cricket-Update#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
